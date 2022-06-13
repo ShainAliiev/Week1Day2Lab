@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= pageTitle%> </title>
+</head>
+<body>
+  <h1> <%=pageHeader%> </h1>
+
+ <ul>
+   <% list.map((emp, index) => { %>
+    <li>
+      
+      <%= emp['name'] %>
+    
+    </li>
+    
+   <% }) %>
+ </ul>
+
+ <% data.forEach(list =>  { %>
+  <a href="<%= list %> ">new</a> 
+  <% }) %>
+</body>
+</html>
